@@ -1,0 +1,135 @@
+/* 
+    Elmer Almeida
+    991507719
+    CSS File for Assignment 1
+ */
+/* Reset everything */
+html, body, h1, h2, h3, h4, h5, h6, span, div, p {
+    padding: 0; margin: 0;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #fff;
+}
+
+header {
+    background-color: #eaf6ff;
+    padding: 20px 10px 20px 10px;
+    box-shadow: rgba(0, 0, 0, 0.44) 0px 3px 8px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+   margin: 0; padding: 0; 
+   font-size: 27px;
+   text-align: center;
+   font-weight: 700;
+   margin-bottom: 20px;
+}
+@media (max-width: 900px) {
+    header h1 {
+        font-size: 20px;
+    }
+}
+
+header > img {
+   border-radius: 5%;
+   box-shadow: rgba(0, 0, 0, 0.44) 0px 3px 8px;
+   display: block;
+   margin: 10px auto;
+}
+
+section {
+
+}
+
+section#apply-loan, section#approval-loan {
+    padding: 10px 20px;
+}
+
+section > h2 {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 4px;
+}
+@media (max-width: 900px) {
+    section > h2 {
+        font-size: 24px;
+    }
+}
+
+
+form {
+    margin: auto;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+form div:first-child {
+    margin-top: 15px;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    margin-top: 10px;
+}
+
+form div label {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+form div input, form div select {
+    border: 1px solid #333;
+    border-radius: 7px;
+    padding: 7px 10px;
+    font-size: 15px;
+    color: #333;
+    font-weight: 400;
+}
+form button {
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-top: 14px;
+    border-radius: 4px;
+    border: none;
+    padding: 10px 15px;
+    font-weight: 700;
+    font-size: 15px;
+    color: #fff;
+    background-color: #0892d0;
+    box-shadow: #000 0px 2px 4px;
+}
+form button:hover {
+    cursor: pointer;
+}
+
+#customer-details {
+    padding: 10px 20px;
+}
+#customer-details h2 {
+    font-size: 24px;
+    font-weight: 400;
+}
+p#loan-details, p#company-information {
+    line-height: 1.6em;
+}
+
+footer {
+    padding: 18px 0;
+    margin-top: 18px;
+    background-color: #eaf6ff;
+    box-shadow: rgba(0, 0, 0, 0.44) 0px 3px 8px;
+}
+
+footer > p {
+    font-weight: 700;
+    text-align: center;
+}
+footer > p:last-child {
+    margin-top: 5px;
+}

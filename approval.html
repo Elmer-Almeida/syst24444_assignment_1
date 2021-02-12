@@ -1,0 +1,84 @@
+<!--
+    Author: Elmer Almeida
+    Student Number: 991507719
+    Approval Page for Assignment 1. This page will display the calculated data from the clients form.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Approval | Elmer Almeida</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header>
+        <h1>Assignment #1 / Elmer Almeida / 991507719</h1>
+        <img src="img/profile_pic.jpg" alt="Elmer Almeida's Picture" height="150" width="150" />
+    </header>
+
+    <section id="approval-loan">
+
+        <h2 style="text-align: left;">Applicant Information</h2>
+        <hr />
+        <p id="company-information"></p>
+
+        <div>
+            <form action="" method="post" id="approval-form">
+                <div>
+                    <label> <b>Interest: </b> </label>
+                    <input type="number" step=".01" id="interest_output" name="interest" />
+                </div>
+                <div>
+                    <label> <b>Payment: </b> </label>
+                    <input type="number" step=".01" id="payment_output" name="payment" />
+                </div>
+                <div>
+                    <label> <b>Profit: </b> </label>
+                    <input type="number" step=".01" id="profit_output" name="profit" />
+                </div>
+                <div>
+                    <label> <b>Decision: </b> </label>
+                    <select id="decision_output" name="decision">
+                        <option value="accept">Accept</option>
+                        <option value="reject">Reject</option>
+                        <option value="need_information">Need More Information</option>
+                    </select>
+                </div>
+                    <button type="submit">Save</button>
+            </form>
+        </div>
+
+    </section>
+
+    <section>
+
+        <!--
+            Display all data from local storage for this loan
+        -->
+        <div id="customer-details">
+
+            <h2>Customer Details</h2>
+            <hr />
+            <p id="loan-details"></p>
+
+        </div>
+
+    </section>
+
+    <!-- 
+    Button to clear localStorage
+    <button onclick="clearLocalStorage()">Clear Local Storage</button>
+    -->
+
+    <footer>
+        <p>almeielm</p>
+        <p>Sheridan College Davis Campus</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="js/core.js" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!--
+    Author: Elmer Almeida
+    Student Number: 991507719
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elmer Almeida</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header>
+        <h1>Assignment #1 / Elmer Almeida / 991507719</h1>
+        <img src="img/profile_pic.jpg" alt="Elmer Almeida's Picture" height="150" width="150" />
+    </header>
+
+    <section id="apply-loan">
+
+        <h2>Apply for a Loan</h2>
+
+        <hr />
+
+        <div>
+
+            <form action="approval.html" id="loan-form" method="post">
+                <div>
+                    <label for="customer_company_name">Customer Company Name</label>
+                    <input type="text" name="customer_company_name" required />
+                </div>
+                <div>
+                    <label for="company_owner">Company Owner</label>
+                    <input type="text" name="company_owner" required />
+                </div>
+                <div>
+                    <label for="email_address">E-Mail Address</label>
+                    <input type="email" name="email_address" required />
+                </div>   
+                <div>
+                    <label for="phone_number">Phone Number</label>
+                    <input type="tel" name="phone_number" required />
+                </div>
+                <div>
+                    <label for="annual_sales">Annual Sales (in dollars)</label>
+                    <input type="number" name="annual_sales" required />
+                </div>
+                <div>
+                    <label for="borrow_amount">Borrow Amount (in dollars)</label>
+                    <input type="number" name="borrow_amount" required />
+                </div>  
+                <div>
+                    <label for="payment_terms">Payment terms</label>
+                    <input type="number" name="payment_terms" required />
+                </div>
+                <button type="submit">Next</button>
+            </form>
+        </div>
+
+    </section>
+
+    <!--
+    Button to wipe localStorage saved
+
+    <button onclick="clearLocalStorage()">Clear Local Storage</button>
+
+    -->
+
+    <footer>
+        <p>almeielm</p>
+        <p>Sheridan College Davis Campus</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="js/core.js" type="text/javascript"></script>
+</body>
+</html>
